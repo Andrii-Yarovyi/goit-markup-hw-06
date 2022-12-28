@@ -716,14 +716,20 @@ h6 {
 }
 .modal-close-btn:hover, 
 .modal-close-btn:focus {
-    border-color: var(--iris-primary-brand);
+    border-radius: 50%;
+}
+.modal-close-btn:active {
+    background: #404BBF;
+}
+.modal-close-btn:active .modal-close-btn-ikon {
+    fill: var(--cloud);
 }
 .modal-close-btn-ikon {
     transition: fill var(--transition-duration-and-func);
 }
 .modal-close-btn:hover .modal-close-btn-ikon, 
 .modal-close-btn:focus .modal-close-btn-ikon {
-    fill: var(--iris-primary-brand);
+    border-radius: 50%;
 }
 .modal-form {
     display: flex;
@@ -840,6 +846,15 @@ h6 {
 .modal-form-check:focus + .modal-form-check-desc::before {
     outline: 2px solid rgba(0, 0, 255, 0.5);
 }
+.privacy-policy-text {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: var(--iris-primary-brand);
+
+}
 .modal-form-submit {
     min-width: 169px;
     align-self: center;
@@ -851,7 +866,6 @@ h6 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    text-transform: uppercase;
     background-color: var(--iris-primary-brand);
     transition: color var(--transition-duration-and-func), background-color var(--transition-duration-and-func);
     color: var(--cloud);
